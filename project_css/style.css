@@ -1,0 +1,205 @@
+/* Top Navbar css Start  */
+body {
+    font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+}
+
+.Topnavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EE99C2;
+    padding: 15px;
+}
+
+.Topnavbar .contact-info,
+.Topnavbar .social-icons {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.Topnavbar .contact-info span {
+    margin-right: 20px;
+}
+
+.Topnavbar .social-icons a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .Topnavbar {
+        display: none;
+    }
+}
+
+/* Top Navbar css end  */
+
+/* Header css Start  */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F5F5;
+    padding: 10px 20px;
+    position: relative;
+    height: 70px;
+}
+
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-links a button {
+    background-color: #0C359E;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.nav-links a button:hover {
+    box-shadow: 0px 5px 15px gray;
+}
+
+.forHoverMainNav:hover {
+    background-color: #0C359E;
+    color: white;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.search-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.search-popup {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #0C359E;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.search-container input {
+    padding: 5px;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    width: 270px;
+}
+
+.search-container .search-btn {
+    padding: 5px;
+    background: #F6F5F5;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-container .search-btn i {
+    font-size: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F6F5F5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 0px 4px 8px #0C359E;
+
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a button {
+    background-color: #0C359E;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+
+
+}
+
+.sidebar a button:hover {
+    box-shadow: 0px 5px 15px gray;
+}
+
+.forHover:hover {
+    background-color: #0C359E;
+    color: white;
+}
+
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        color: black;
+    }
+
+    .search-icon {
+        display: block;
+    }
+}
+
+/* Header css end  */
