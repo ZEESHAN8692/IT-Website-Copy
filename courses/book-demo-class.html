@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('js/service-worker.js') // Adjust the path accordingly
+                .then((registration) => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch((error) => {
+                    console.error('Service Worker registration failed:', error);
+                });
+        }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WHKXCF4SM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4WHKXCF4SM');
+    </script>
+    <!--SEO Start-->
+    <title>it pathshaala | Best Coding Learning & Training Center, Bareilly</title>
+    <meta name="description"
+        content="Learn Autocad, 3ds max, solidworks, cadd, plc, interior design, civil, architecture, animations, sap erp course at low price. Best Training Center in Bareilly..">
+    <meta name="keywords" content="Autocad course in Bareilly">
+    <meta name="author" content="cadtabs">
+    <!--google Ads-->
+    <meta name="google-site-verification" content="google.com, pub-7953288999387857, DIRECT, f08c47fec0942fa0">
+    <!--SEO Finished-->
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/itpathshaala.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="https://cadtabs.com"
+            style="background-color: #37B7C3;padding-left: 10px;padding-right: 10px; color: #ffffff;">Cadtabs Training
+            Services</a>
+        <a href="https://maps.app.goo.gl/n64i6ddgfzL3Qi5E7">Address: Stadium Road, Bareilly</a>
+        <a href="Tel: 08183839393"
+            style="background-color: #37B7C3;padding-left: 10px;padding-right: 10px; color: #ffffff;">Phone:
+            +91-8193839393 | +91-9457589936</a>
+        <a href="mailto:cadtabsindia@gmail.com">Email: info@cadtabs.com</a>
+    </div>
+
+    <header>
+        <div>
+            <h2><a href="https://cadtabs.com" style="text-decoration: none;">it pathshaala<sup
+                        style="font-size: 15px;">&reg</sup></a></h2>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search Course Here">
+            <button id="searchButton">Search</button>
+            <ul id="searchList">
+                <li><a href="courses/civil-architecture/autocad-training-center.html"
+                        style="text-decoration: none;color: #071952;">AutoCAD</a></li>
+                <li><a href="courses/civil-architecture/3ds-max-training-center.html"
+                        style="text-decoration: none;color: #071952;">3Ds Max</a></li>
+                <li><a href="courses/mechanical/solidworks-training-center.html"
+                        style="text-decoration: none;color: #071952;">SolidWorks</a></li>
+                <li><a href="courses/electrical/plc-training-center.html"
+                        style="text-decoration: none;color: #071952;">PLC</a></li>
+                <li><a href="courses/civil-architecture/staad-pro-training-center.html"
+                        style="text-decoration: none;color: #071952;">Staad Pro</a></li>
+                <li><a href="courses/civil-architecture/etabs-training-center.html"
+                        style="text-decoration: none;color: #071952;">ETabs</a></li>
+                <li><a href="courses/civil-architecture/sketchup-training-center.html"
+                        style="text-decoration: none;color: #071952;">SketchUp</a></li>
+                <li><a href="courses/civil-architecture/lumions-training-center.html"
+                        style="text-decoration: none;color: #071952;">Lumions</a></li>
+                <li><a href="courses/civil-architecture/vray.html"
+                        style="text-decoration: none;color: #071952;">Vray</a></li>
+                <li><a href="courses/civil-architecture/quantity-estimation-training-center.html"
+                        style="text-decoration: none;color: #071952;">Quantity Surveying</a></li>
+                <li><a href="courses/civil-architecture/revit-training-center.html"
+                        style="text-decoration: none;color: #071952;">Revit</a></li>
+                <li><a href="courses/mechanical/creo-training-center.html"
+                        style="text-decoration: none;color: #071952;">Creo</a></li>
+                <li><a href="courses/mechanical/catia-training-center.html"
+                        style="text-decoration: none;color: #071952;">Catia</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <nav style="background-color: #071952;">
+        <div class="menu-icon" onclick="toggleLeftSidebar()">&#9776;</div>
+        <a href="https://cadtabs.com" onclick="showContent('home')">Home</a>
+        <a href="courses.html" onclick="showContent('courses')">Courses</a>
+        <a href="certificate/apply/certificate.html" onclick="showContent('contact')">Certificate</a>
+        <a href="certificate/verify/verify_certificate.html" onclick="showContent('home')">Verification</a>
+        <a href="blog/blog.html" onclick="showContent('about')">Blog</a>
+        <a href="blog/news.html" onclick="showContent('contact')">News</a>
+        <a href="https://itpathshaala.in" onclick="showContent('home')">IT Pathshaala</a>
+        <a href="contact.html" onclick="showContent('contact')">Contact</a>
+        <a href="about.html" onclick="showContent('contact')">About</a>
+    </nav>
+
+    <div class="container">
+        <div class="left-sidebar">
+            <span class="close-btn" onclick="toggleLeftSidebar()">&times;</span>
+            <a href="javascript:void(0)" onclick="showContent('home')">Programming Language</a>
+            <hr>
+            <a href="c-language.html" onclick="showContent('about')">C Language</a>
+            <a href="courses/mechanical/solidworks-training-center.html" onclick="showContent('contact')">C++</a>
+            <a href="courses/mechanical/creo-training-center.html" onclick="showContent('about')">Java Code </a>
+            <a href="courses/mechanical/catia-training-center.html" onclick="showContent('contact')">JAVA Advance</a>
+            <a href="courses/mechanical/sap-pp-mm-warehouse-training-center.html" onclick="showContent('about')">Full
+                Stack Java</a>
+            <a href="courses/mechanical/cnc-training-center.html" onclick="showContent('contact')">Python
+                Fundamental</a>
+            <a href="courses/mechanical/fusion-360-training-center.html" onclick="showContent('about')">Python
+                Advance</a>
+            <a href="courses/mechanical/ansys-training-center.html" onclick="showContent('contact')">Python Full
+                Stack</a>
+            <a href="courses/mechanical/ansys-training-center.html" onclick="showContent('contact')">Python DSA</a>
+            <a href="courses/mechanical/ansys-training-center.html" onclick="showContent('contact')">ASP.NET</a>
+            <a href="courses/mechanical/ansys-training-center.html" onclick="showContent('contact')">C#</a>
+            <a href="courses/mechanical/ansys-training-center.html" onclick="showContent('contact')">SQL- MYSQL</a>
+            <a href="courses/mechanical/ansys-training-center.html" onclick="showContent('contact')">PHP</a>
+
+
+
+            <hr>
+            <a href="javascript:void(0)" onclick="showContent('home')">Developer Choice</a>
+            <hr>
+            <a href="courses/civil-architecture/autocad-training-center.html" onclick="showContent('about')">Jquery</a>
+            <a href="courses/civil-architecture/revit-training-center.html" onclick="showContent('contact')">HTML</a>
+            <a href="courses/civil-architecture/3ds-max-training-center.html" onclick="showContent('about')">CSS</a>
+            <a href="courses/civil-architecture/sketchup-training-center.html"
+                onclick="showContent('contact')">javaScript</a>
+            <a href="courses/civil-architecture/lumions-training-center.html" onclick="showContent('about')">Node.js</a>
+            <a href="courses/civil-architecture/staad-pro-training-center.html"
+                onclick="showContent('contact')">React</a>
+            <a href="courses/civil-architecture/etabs-training-center.html" onclick="showContent('about')">JSON</a>
+            <a href="courses/civil-architecture/quantity-estimation-training-center.html"
+                onclick="showContent('contact')">Angular JS</a>
+            <a href="courses/civil-architecture/etabs-training-center.html" onclick="showContent('about')">Git Hub</a>
+            <a href="courses/civil-architecture/etabs-training-center.html" onclick="showContent('about')">NumPy</a>
+            <a href="courses/civil-architecture/etabs-training-center.html" onclick="showContent('about')">Cyber
+                Security</a>
+            <a href="courses/civil-architecture/etabs-training-center.html" onclick="showContent('about')">SciPy</a>
+            <a href="courses/civil-architecture/etabs-training-center.html" onclick="showContent('about')">Graphic / Web
+                Design</a>
+            <a href="courses/civil-architecture/etabs-training-center.html" onclick="showContent('about')">R</a>
+            <a href="courses/civil-architecture/etabs-training-center.html" onclick="showContent('about')">Rasberry
+                Pi</a>
+            <a href="courses/civil-architecture/etabs-training-center.html" onclick="showContent('about')">XML</a>
+            <a href="courses/civil-architecture/etabs-training-center.html" onclick="showContent('about')">Matplotib</a>
+            <a href="courses/civil-architecture/etabs-training-center.html" onclick="showContent('about')">BootStrap</a>
+
+
+            <hr>
+            <a href="javascript:void(0)" onclick="showContent('home')">COURSE</a>
+            <hr>
+            <a href="courses/electrical/autocad-electrical-training-center.html"
+                onclick="showContent('about')">Professional Diploma in Digital Marketing</a>
+            <a href="courses/electrical/revit-electrical-training-center.html" onclick="showContent('contact')">Mater
+                Diploma Digital Marketing</a>
+            <a href="courses/electrical/plc-training-center.html" onclick="showContent('about')">Full Stack Web
+                Development</a>
+            <a href="courses/electrical/scada-training-center.html" onclick="showContent('contact')">Full Stack Java
+                Developer</a>
+            <a href="courses/electrical/solar-design-training-center.html" onclick="showContent('about')">Full Stack App
+                Developer</a>
+            <a href="courses/electrical/etap-training-center.html" onclick="showContent('contact')">Professional Diploma
+                in Cloud Computing</a>
+            <a href="courses/electrical/matlab-training-center.html" onclick="showContent('about')">Professional Diploma
+                in Ethical Hacking</a>
+            <a href="courses/electrical/embedded-system-training-center.html"
+                onclick="showContent('contact')">Professional Diploma in Software Testing</a>
+            <hr>
+        </div>
+        <!--article start-->
+        <div class="content" >
+            <iframe src="forms/demo-class/book-demo-form.html" width="100%" height="900px" style="border: none;"></iframe>
+
+           
+
+           
+
+        </div>
+        <!--article closed-->
+        <div class="right-sidebar">
+            <h2>Master Certificate</h2>
+            <hr>
+            <ul>
+                <li><a href="classes/building-design-course.html" style="text-decoration: none;">Master Certificate in
+                        Building Design</a></li><br>
+                <li><a href="classes/production-planning-course.html" style="text-decoration: none;">Master Certificate
+                        in Production Planning</a></li><br>
+                <li><a href="classes/machine-design-course.html" style="text-decoration: none;">Master Certificate in
+                        Machine Design</a></li><br>
+                <li><a href="classes/electrical-design-course.html" style="text-decoration: none;">Master Certificate in
+                        Electrical Design</a></li><br>
+                <li><a href="classes/hvac-design.html" style="text-decoration: none;">Master Certificate in HVAC
+                        Design</a></li><br>
+                <li><a href="classes/quantity-surveying.html" style="text-decoration: none;">Master Certificate in
+                        Quantity Surveying</a></li><br>
+                <hr>
+            </ul>
+            <h3>Student Feedback</h3>
+            <iframe width="auto" height="auto" style="border-radius: 10px;"
+                src="https://www.youtube.com/embed/L7epZabzjis?si=f1GhyFikzBKg4hs3"
+                title="AutoCAD Training Center in Bareilly" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <hr>
+            <iframe width="auto" height="auto" style="border-radius: 10px;"
+                src="https://www.youtube.com/embed/ceReWRo-kq8?si=AD08jRyxzb1qYfLM" title="AutoCAD Course in Bareilly"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <hr>
+            <iframe src="forms/enquiry-form.html" width="100%" height="540px" style="border: none;"></iframe>
+            <hr>
+            <iframe src="forms/newsletter.html" width="100%" height="300px" style="border: none;"></iframe>
+        </div>
+    </div>
+    <!--4 column started 0-->
+    <div class="container"
+        style="font-family: Verdana, Geneva, Tahoma, sans-serif;border-bottom: 2px solid gray;border-top: 2px solid gray; padding-left: 100px;">
+        <div class="column">
+            <div class="column-content">
+                <h3 style="color: #071952;">Corporate Headquaters</h3>
+                <img src="images/itpathshaala.png" width="80px">
+                <address>
+                    <p>
+                        2nd Floor, Cadtabs Training Services, Stadium Road,<br>
+                        Opp-Gyanaya School, Ekta Nagar, Bareilly(Uttar Pradesh),<br>
+                        India. Pin-243001</p><br>
+                </address>
+                <hr style="margin-top: 10px;">
+                <br>
+                <img src="images/iso.png" alt="iso certification" width="80px"
+                    style="border-left: 1px solid gray;padding-left: 10px;margin: 10px;">
+                <img src="images/msme.png" alt="msme" width="80px"
+                    style="border-left: 1px solid gray;padding-left: 10px;margin: 10px;">
+                <img src="images/cert.png" alt="certiport" height="70px"
+                    style="border-left: 1px solid gray;padding-left: 10px;margin: 10px;">
+
+            </div>
+        </div>
+
+        <div class="column" style="border-left: 1px solid gray;padding-left: 15px;">
+            <div class="column-content">
+                <h3 style="color: #071952;">Course Mode</h3>
+
+                <p><a href="classes/regular-course.html" style="text-decoration: none;color: #333;">Regular</a></p>
+                <p><a href="classes/fast-track-course.html" style="text-decoration: none;color: #333;">Fast Track</a>
+                </p>
+                <p><a href="classes/weekend-course.html" style="text-decoration: none;color: #333;">Weekend</a></p>
+                <p><a href="classes/online-classes.html" style="text-decoration: none;color: #333;">Online</a></p>
+                <p><a href="classes/offline-classes.html" style="text-decoration: none;color: #333;">Offline</a></p>
+                <p><a href="classes/project.html" style="text-decoration: none;color: #333;">Project Based</a></p>
+
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="column-content" style="border-left: 1px solid gray;padding-left: 15px;">
+                <h3 style="color: #071952;">Information Technology</h3>
+
+                <p><a href="https://itpathshaala.in" style="text-decoration: none;color: #333;">Python</a></p>
+                <p><a href="https://itpathshaala.in" style="text-decoration: none;color: #333;">Java</a></p>
+                <p><a href="https://itpathshaala.in" style="text-decoration: none;color: #333;">C Language</a></p>
+                <p><a href="https://itpathshaala.in" style="text-decoration: none;color: #333;">C++</a></p>
+                <p><a href="https://itpathshaala.in" style="text-decoration: none;color: #333;">Website Development</a>
+                </p>
+                <p><a href="https://itpathshaala.in" style="text-decoration: none;color: #333;">Android Development</a>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="column" style="border-left: 1px solid gray; padding-right: 100px;padding-left: 15px;">
+            <div class="column-content">
+                <h3 style="color: #071952;">Company</h3>
+
+                <p><a href="about.html" style="text-decoration: none;color: #333;">About Us</a></p>
+                <p><a href="contact.html" style="text-decoration: none;color: #333;">Contact Us</a></p>
+                <p><a href="privacy-policy.html" style="text-decoration: none;color: #333;">Privacy Policy</a></p>
+                <p><a href="faq.html" style="text-decoration: none;color: #333;">FAQ's</a></p>
+                <br>
+
+            </div>
+        </div>
+    </div>
+    <!--4 column closed 0-->
+    <!--4 column started-->
+    <div class="container" style="font-family: Verdana, Geneva, Tahoma, sans-serif; padding-left: 100px;">
+        <div class="column">
+            <div class="column-content">
+                <h3 style="color: #071952;">Mechanical</h3>
+
+                <p><a href="courses/mechanical/autocad-training-center.html"
+                        style="text-decoration: none;color: #333;">AutoCAD Mechanical</a></p>
+                <p><a href="courses/mechanical/creo-training-center.html"
+                        style="text-decoration: none;color: #333;">Creo</a></p>
+                <p><a href="courses/mechanical/catia-training-center.html"
+                        style="text-decoration: none;color: #333;">Catia</a></p>
+                <p><a href="courses/mechanical/nx-cad.html" style="text-decoration: none;color: #333;">NX CAD</a></p>
+                <p><a href="courses/mechanical/ansys-training-center.html"
+                        style="text-decoration: none;color: #333;">Ansys</a></p>
+                <p><a href="courses/mechanical/solidworks-training-center.html"
+                        style="text-decoration: none;color: #333;">SolidWorks</a></p>
+
+            </div>
+        </div>
+
+        <div class="column" style="border-left: 1px solid gray;padding-left: 15px;">
+            <div class="column-content">
+                <h3 style="color: #071952;">Architecture & Engineering</h3>
+
+                <p><a href="courses/civil-architecture/autocad-training-center.html"
+                        style="text-decoration: none;color: #333;">AutoCAD Architecture</a></p>
+                <p><a href="courses/civil-architecture/autocad-training-center.html"
+                        style="text-decoration: none;color: #333;">AutoCAD Civil</a></p>
+                <p><a href="courses/civil-architecture/3ds-max-training-center.html"
+                        style="text-decoration: none;color: #333;">3Ds Max (Max for Engineer)</a></p>
+                <p><a href="courses/civil-architecture/bim-training-center.html"
+                        style="text-decoration: none;color: #333;">5D BIM</a></p>
+                <p><a href="courses/civil-architecture/naviswork-training-center.html"
+                        style="text-decoration: none;color: #333;">5D BIM using NavisWorks</a></p>
+                <p><a href="courses/civil-architecture/revit-training-center.html"
+                        style="text-decoration: none;color: #333;">Revit Architecture</a></p>
+                <p><a href="courses/civil-architecture/sketchup-training-center.html"
+                        style="text-decoration: none;color: #333;">SketchUp</a></p>
+
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="column-content" style="border-left: 1px solid gray;padding-left: 15px;">
+                <h3 style="color: #071952;">Electrical</h3>
+
+                <p><a href="courses/electrical/autocad-electrical-training-center.html"
+                        style="text-decoration: none;color: #333;">AutoCAD Electrical</a></p>
+                <p><a href="courses/electrical/plc-training-center.html"
+                        style="text-decoration: none;color: #333;">PLC</a></p>
+                <p><a href="courses/electrical/scada-training-center.html"
+                        style="text-decoration: none;color: #333;">Scada</a></p>
+                <p><a href="courses/electrical/matlab-training-center.html"
+                        style="text-decoration: none;color: #333;">Matlab</a></p>
+                <p><a href="courses/electrical/embedded-system-training-center.html"
+                        style="text-decoration: none;color: #333;">Embedded System</a></p>
+                <p><a href="courses/electrical/solar-design-training-center.html"
+                        style="text-decoration: none;color: #333;">Solar Design</a></p>
+
+            </div>
+        </div>
+
+        <div class="column" style="border-left: 1px solid gray; padding-right: 100px;padding-left: 15px;">
+            <div class="column-content">
+                <h3 style="color: #071952;">Certificate Program</h3>
+
+                <p><a href="certificate/certificate.html" style="text-decoration: none;color: #333;">Certificate</a></p>
+                <p><a href="certificate/master-certificate.html" style="text-decoration: none;color: #333;">Master
+                        Certificate</a></p>
+                <p><a href="certificate/expert.html" style="text-decoration: none;color: #333;">Expert Certificate</a>
+                </p>
+                <p><a href="certificate/diploma.html" style="text-decoration: none;color: #333;">Diploma Certificate</a>
+                </p>
+                <p><a href="certificate/professional-certificate.html"
+                        style="text-decoration: none;color: #333;">Proficient</a></p>
+                <br>
+
+            </div>
+        </div>
+    </div>
+    <!--4 column finished-->
+    <!-- Pop-up Container -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <span class="close" id="close">&times;</span>
+        <iframe src="forms/enquiry-form.html" width="100%" height="530px"></iframe>
+    </div>
+
+    <!--whatsapp-->
+
+    <div>
+        <a href="https://wa.me/+918193839393" class="notification"
+            style="position: fixed;bottom: 0;right: 20px;width: 60px;">
+            <span>Message</span>
+            <span class="badge">2</span>
+        </a>
+    </div>
+
+    <!--reels
+    <div style="position: fixed;bottom: 100px;right: 10px;">
+        <a href="reels/videos.html"><img src="images/reels.png"  alt="Blinking Picture" class="blinking-picture" width="30px" target="_blank"></a>
+    </div>-->
+
+    <footer>
+        <div>
+            &copy; 2024 <a href="https://cadtabs.com" style="text-decoration: none; color: #ffffff;">it pathshaala<sup
+                    style="font-size: 15px;">&reg</sup></a>. All rights reserved.
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>

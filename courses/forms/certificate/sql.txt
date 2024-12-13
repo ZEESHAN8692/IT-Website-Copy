@@ -1,0 +1,14 @@
+CREATE TABLE certificate_applications (
+    registration_number VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    father_name VARCHAR(255) NOT NULL,
+    address TEXT NOT NULL,
+    mobile VARCHAR(15) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    passport_photo VARCHAR(255) NOT NULL,
+    document VARCHAR(255) NOT NULL,
+    course_name VARCHAR(255) NOT NULL,
+    dob DATE NOT NULL,
+    suggestion TEXT,
+    submission_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

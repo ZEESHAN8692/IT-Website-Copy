@@ -1,0 +1,31 @@
+/*reels*/
+.containereel {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.blinking-picture {
+    position: absolute;
+    right: 1px; /* Adjust the left position as needed */
+    animation: blink 2s infinite;
+    display: none; /* Initially hide the image */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .blinking-picture {
+        display: block; /* Show the image in mobile view */
+    }
+}

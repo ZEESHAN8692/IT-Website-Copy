@@ -1,0 +1,12 @@
+CREATE TABLE demo_class (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    fatherName VARCHAR(255) NOT NULL,
+    education VARCHAR(255) NOT NULL,
+    address TEXT NOT NULL,
+    mobile VARCHAR(10) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    courseName VARCHAR(255) NOT NULL,
+    dob DATE NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
