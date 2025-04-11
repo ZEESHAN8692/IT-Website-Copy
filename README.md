@@ -4,5 +4,5 @@ IT Website Copy HTML , CSS, JS
 
 Images:- 
 
-![image](https://github.com/user-attachments/assets/51631477-8c18-4dc2-bae3-478611325456)
+![image](https://github.com/user-attachments/assets/dd8a961e-02c3-41c3-9753-81c17e8f3f8c)
 
